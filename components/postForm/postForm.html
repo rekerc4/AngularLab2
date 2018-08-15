@@ -1,0 +1,8 @@
+
+    <form  ng-submit="$ctrl.onSubmit({ newVal: $ctrl.newEntry });" class="form" id="form">
+        <label class="lab" for="title-in">Title</label>
+        <input type="text" expand-on-focus="expandOnFocus();" class="in" ng-model="$ctrl.newEntry.title" id="title-in" type="text">
+        <label class="lab" for="text-in">Thought</label>
+        <textarea  ng-model="$ctrl.newEntry.lorem" expand-on-focus="expandOnFocus();" id="text-in" class="ta" cols="30" rows="10"></textarea>
+        <button class="add-post" id="add-post">Add Post</button>
+    </form>

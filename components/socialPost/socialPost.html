@@ -1,0 +1,5 @@
+<button id="show" class="show"  ng-click="$ctrl.showForm();">New Thought</button>
+<section class="post" id="post">
+<post item="item" index="$index" ng-repeat="item in $ctrl.post track by $index"></post>
+</section>
+<post-form ng-If="!item.completed ; " on-submit="$ctrl.onSubmit(newVal);" class="the-form" id="the-form"></post-form>
